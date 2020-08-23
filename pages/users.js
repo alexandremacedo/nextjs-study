@@ -3,9 +3,13 @@ import axios from 'axios'
 // import { Container } from './styles';
 
 import Link from 'next/link'
+import Head from 'next/head'
 
 const User = ({ users }) => (
   <div>
+    <Head>
+      <title>Usuários</title>
+    </Head>
     <ul>
       {users.map(user => (
 
