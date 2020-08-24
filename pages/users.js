@@ -1,11 +1,10 @@
 import React from 'react';
 import axios from 'axios'
-// import { Container } from './styles';
 
 import Link from 'next/link'
 import Head from 'next/head'
 
-import withAnalytics from '../src/hocs/withAnalytics'
+import withAnalytics from '~/hocs/withAnalytics'
 
 const User = ({ users }) => (
   <div>
