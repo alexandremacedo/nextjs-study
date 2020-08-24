@@ -1,11 +1,13 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import styled from 'styled-components'
 
 import Link from 'next/link'
 import Head from 'next/head'
 
-import withAnalytics from '../src/hocs/withAnalytics'
+const Title = styled.h1`
+  color: #069;
+  font-size: 50px;
+`
 
 const Home = () => (
   <>
@@ -13,7 +15,7 @@ const Home = () => (
       <title>Home</title>
     </Head>
     <img src="/static/panda.jpg" width="200" alt="" />
-    <h1>Hello World</h1>
+    <Title>Hello World</Title>
     <Link href="users">
       <a>
         Usuarios
@@ -22,4 +24,4 @@ const Home = () => (
   </>
 )
 
-export default withAnalytics()(Home);
+export default Home
